@@ -1,6 +1,7 @@
 import {
     INCREMENT,
-    DECREMENT
+    DECREMENT,
+    RESET
 } from '../constants/index'
 
 const initialState = {
@@ -16,6 +17,10 @@ const reducer = (state = initialState, action) => {
         case DECREMENT:
             return {
                 ...state, counter: state.counter - 1
+            };
+        case RESET:
+            return {
+                ...state, counter: 0
             };
         default:
             return state;

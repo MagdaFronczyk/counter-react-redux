@@ -1,6 +1,5 @@
 import {
-    createStore,
-    applyMiddleware
+    createStore
 } from "redux";
 import reducer from '../rootreducer/index';
 
