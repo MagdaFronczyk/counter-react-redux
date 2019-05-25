@@ -1,7 +1,9 @@
 import {
     INCREMENT,
     DECREMENT,
-    RESET
+    RESET,
+    GETINPUT,
+    TOSQUARE
 } from '../constants/index';
 
 export const increment = () => ({
@@ -14,4 +16,15 @@ export const decrement = () => ({
 
 export const reset = () => ({
     type: RESET
+});
+
+export const getinput = (input) => ({
+    type: GETINPUT,
+    payload: {
+        input
+    }
+});
+
+export const tosquare = () => ({
+    type: TOSQUARE,
 });
